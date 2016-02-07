@@ -1,0 +1,19 @@
+{
+  "name": "swamp.js",
+  "version": "0.0.1",
+  "description": "Swagger Model Proxy --- a library that reads Swagger 2.0 documents and creates a model factory for all definitions defined in the spec.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "swagger",
+    "model"
+  ],
+  "author": "Travis Boudreaux <tjboudreaux@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.2.1",
+    "sway": "^0.6.0"
+  }
+}
