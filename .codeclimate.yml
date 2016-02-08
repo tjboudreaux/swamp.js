@@ -1,12 +1,6 @@
 engines:
   duplication:
     enabled: false
-    config:
-      languages:
-        - javascript
-          mass_threshold: 60
-    exclude_fingerprints:
-      - 9be07fde3dd62d57148fd2624e983f53
   eslint:
     enabled: true
   csslint:
