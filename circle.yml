@@ -10,6 +10,6 @@ dependencies:
 
 test:
     post:
-        - CODECLIMATE_REPO_TOKEN=${CODE_CLIMATE_KEY} codeclimate-test-reporter < build/reports/coverage/lcov.info
-        - mv build $CIRCLE_ARTIFACTS/build
+        - CODECLIMATE_REPO_TOKEN=${CODE_CLIMATE_KEY} codeclimate-test-reporter < coverage/lcov.info
+        - mv coverage $CIRCLE_ARTIFACTS/coverage
 
