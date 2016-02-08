@@ -1,11 +1,11 @@
 "use strict";
 
-let SwampFactory = require('../lib/factory');
+let Swamp = require('../lib/swamp');
 let swaggerFilePath = './petstore.json';
 
 let ExtendedPet = { getName: function() { return 'PetName: ' + this.name; } };
 
-SwampFactory
+Swamp
     .create(swaggerFilePath)
     .then(function(swamp){
         swamp.register('Pet', ExtendedPet);
