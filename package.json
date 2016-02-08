@@ -1,19 +1,32 @@
 {
   "name": "swamp.js",
   "version": "0.0.1",
-  "description": "Swagger Model Proxy --- a library that reads Swagger 2.0 documents and creates a model factory for all definitions defined in the spec.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Travis Boudreaux <tjboudreaux@gmail.com>",
+  "description": "Swagger Model Repository --- a library that reads Swagger 2.0 documents and creates a model factory for all definitions defined in the spec.",
+  "license": "ISC",
+  "main": "lib/swamp.js",
   "keywords": [
     "swagger",
     "model"
   ],
-  "author": "Travis Boudreaux <tjboudreaux@gmail.com>",
-  "license": "ISC",
+  "scripts": {
+    "test": "mocha tests",
+    "test:watch": "npm run test -- -w"
+  },
   "dependencies": {
     "lodash": "^4.2.1",
     "sway": "^0.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "codeclimate-test-reporter": "^0.3.1",
+    "eslint": "^1.10.3",
+    "karma": "^0.13.19",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.5.3",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
   }
 }

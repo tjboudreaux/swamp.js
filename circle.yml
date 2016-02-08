@@ -1,0 +1,15 @@
+machine:
+  timezone:
+    America/Chicago
+  node:
+    version: v5.4.1
+
+dependencies:
+    post:
+    - npm install -g dev
+
+test:
+    post:
+        - CODECLIMATE_REPO_TOKEN=${CODE_CLIMATE_KEY} codeclimate-test-reporter < build/reports/coverage/lcov.info
+        - mv build $CIRCLE_ARTIFACTS/build
+
