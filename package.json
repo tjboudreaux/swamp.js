@@ -10,6 +10,9 @@
     "model"
   ],
   "scripts": {
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp",
     "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./tests/*.js",
     "test:no-cover": "mocha tests",
     "test:watch": "npm run test -- -w"
