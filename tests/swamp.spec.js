@@ -33,6 +33,13 @@ describe('Swamp Factory', function(){
                 });
         });
 
+        it('should throw an error when a definition does not exist', function(){
+            return swamp.create(swaggerFilePath)
+                .then(function (swaggerApi) {
+                    expect(function(){ swaggerApi.get('FakeTag'); }).to.throw(TypeError);
+                });
+        });
+
         it('should initialize arrays as an array', function(){
             return swamp.create(swaggerFilePath)
                 .then(function (swaggerApi) {
