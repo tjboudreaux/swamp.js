@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "lodash": "^4.2.1",
-    "sway": "^0.6.0"
+    "sway": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
