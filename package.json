@@ -1,5 +1,5 @@
 {
-  "name": "swamp",
+  "name": "swampjs",
   "version": "0.0.11",
   "author": "Travis Boudreaux <tjboudreaux@gmail.com>",
   "description": "Swagger Model Repository --- a library that reads Swagger 2.0 documents and creates a model factory for all definitions defined in the spec.",
